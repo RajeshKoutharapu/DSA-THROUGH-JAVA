@@ -1,0 +1,9 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "pattrens",
+        "Sorting&leetcode",
+        "Leetcode-Strings",
+        "Recursion"
+    ]
+}
