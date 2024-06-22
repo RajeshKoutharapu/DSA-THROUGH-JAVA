@@ -3,7 +3,8 @@
     "java.project.sourcePaths": [
         "pattrens",
         "Sorting&leetcode",
+        "Recursion",
         "Leetcode-Strings",
-        "Recursion"
+        "llinearSearch&Leetcode"
     ]
 }
