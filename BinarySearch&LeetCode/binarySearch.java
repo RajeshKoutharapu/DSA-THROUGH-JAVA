@@ -1,4 +1,4 @@
-package BinarySearch;
+
 public class binarySearch {
     public static void main(String[] args) {
         int [] aa={9,8,7,6,5,4,3,2};

@@ -2,9 +2,10 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "pattrens",
+        "llinearSearch&Leetcode",
         "Sorting&leetcode",
         "Recursion",
         "Leetcode-Strings",
-        "llinearSearch&Leetcode"
+        "BinarySearch&LeetCode"
     ]
 }
