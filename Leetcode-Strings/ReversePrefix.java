@@ -4,9 +4,7 @@ public class ReversePrefix {
         String word = "abcdefd";
         StringBuffer s=new StringBuffer();
         char ch = 'd';
-        int in=0;
         int index=word.indexOf(ch);
-       // char temp=word.charAt(index);
        for(int i=index;i>=0;i--){
             s.append(word.charAt(i));
        }
