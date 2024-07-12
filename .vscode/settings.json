@@ -3,10 +3,13 @@
     "java.project.sourcePaths": [
         "pattrens",
         "llinearSearch&Leetcode",
+        "TwoPointers",
         "Sorting&leetcode",
+        "SlidingWindow",
         "Recursion",
+        "LinkedList&LeetCode",
         "Leetcode-Strings",
         "BinarySearch&LeetCode",
-        "LinkedList&LeetCode"
+        "Hashmaps&Leetcode"
     ]
 }

@@ -2,6 +2,7 @@
 public class ValidPalindrom {
     public static void main(String[] args) {
         String s = "A man, a plan, a canal: Panama";
+        StringBuffer sb=new StringBuffer();
         for(int i=0;i<s.length();i++){
             if(Character.isLetter(s.charAt(i)) ||Character.isDigit(s.charAt(i))){
              sb.append(s.charAt(i));
