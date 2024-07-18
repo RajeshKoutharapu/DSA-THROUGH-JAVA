@@ -8,10 +8,12 @@ public class implementationStack {
         satck.push(5);
         satck.display();
         System.out.println();
-        satck.pop();
+        //satck.pop();
         satck.display();
         System.out.println();
         System.out.println(satck.peek());
+           satck.push(44);
+           satck.display();
 
     }
 }

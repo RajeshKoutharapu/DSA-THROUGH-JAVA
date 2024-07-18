@@ -10,6 +10,14 @@ public class CollectionsStack {
         stack.push(10);
         stack.push(14);
         System.out.println(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+        System.out.println(stack.add(16));
+        System.out.println(stack);
+        System.out.println(stack.capacity());
+        System.out.println(stack.contains(4));
+        System.out.println(stack.indexOf(4));
+        //System.out.println(stack.);
 
         
        }
