@@ -17,7 +17,7 @@ public class BackSpaceString {
              } else
                    stack.push(s.charAt(i));
              }
-         
+       // int hh=09;
          for(int i=0;i<t.length();i++){
              
              if(t.charAt(i)=='#'){
