@@ -11,6 +11,7 @@ public class ReverseString {
             l++;
             h--;
         }
+        System.out.println(s);
      //   System.out.print(Arrays.toString(s));
     }
 }
