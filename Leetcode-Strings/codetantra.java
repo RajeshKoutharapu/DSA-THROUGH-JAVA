@@ -8,5 +8,7 @@ public class codetantra {
             System.out.println("fly");
         }else
           System.out.println("cannot fly");
+          sc.close();
     }
+    
 }

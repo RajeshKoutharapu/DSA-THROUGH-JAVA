@@ -4,7 +4,7 @@
         "pattrens",
         "llinearSearch&Leetcode",
         "TwoPointers",
-        "Stacks",
+        "Stacks & Queues",
         "Sorting&leetcode",
         "SlidingWindow",
         "Recursion",
@@ -12,6 +12,6 @@
         "Leetcode-Strings",
         "Hashmaps&Leetcode",
         "BinarySearch&LeetCode",
-        "Stacks & Queues"
+        "BitManipulation"
     ]
 }
