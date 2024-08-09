@@ -13,30 +13,27 @@ public class KthWeakestRow {
             {1,1,0,0,0},
             {1,1,1,1,1}};
             int k=3;
-
-        // List<Integer> list=new ArrayList<>();
-        int [] arr=new int[k];
+            int []res=new int[k];
     Map<Integer,Integer> map=new TreeMap<>();
-    int count=0;
+   int count=0;
    int r=mat.length;
    int c=mat[0].length;
+   System.out.println(c);
         for(int i=0;i<r;i++){
+            count=0;
             for(int j=0;j<c;j++){
                  if(mat[i][j]==1)
                     count++;
             }
-            map.put(count*r+1,i);
-            count=0;
+            map.put(count*,i);
         }
-        int in=0;
-        for(Integer en:map.keySet()){
-            System.out.println(en);
-                 if(in<k){
-                    arr[in]=map.get(en);
-                 }else
-                    break;
+int cc=0;
+        for(Integer val:map.keySet()){
+            if(cc<=k)
+             res[cc]=val;
         }
-        System.out.println(Arrays.toString(arr));
+    
+        System.out.println(Arrays.toString(res));
 
     }
 }
