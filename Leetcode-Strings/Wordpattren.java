@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class Wordpattren {
      public static void main(String[] args) {
+      System.out.println((-1+0)%5);
         String pattern = "abba";
         String s = "dog dog cat fish";
         String ar[]=s.split(" ");
