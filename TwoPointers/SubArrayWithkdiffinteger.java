@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class SubArrayWithkdiffinteger {
      public static void main(String[] args) {
-        int nums[]={1,2,1,2,3};
+        int nums[]={0, 0, 0, 1, 0, 0, 1, 0, 0, 0};
         int k=2;
             System.out.println(findsubstring(nums, k)-findsubstring(nums, k-1));
      }
