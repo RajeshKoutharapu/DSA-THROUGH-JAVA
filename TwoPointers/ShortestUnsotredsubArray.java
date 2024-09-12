@@ -20,7 +20,7 @@ public class ShortestUnsotredsubArray {
         }
 
         while(l<r){
-            int max=findMax(nums,l);
+            int max=findMax(nums,l,r);
             if(nums[r]==max)
                r--;
                else{
@@ -42,9 +42,9 @@ public class ShortestUnsotredsubArray {
         return min;
      }
 
-     static int findMax(int[] nums,int index){
+     static int findMax(int[] nums,int index,int last){
         int max=Integer.MIN_VALUE;
-        for(int i=index;i<nums.length;i++){
+        for(int i=index;i<=last;i++){
             if(nums[i]>max)
                max=nums[i];
         }

@@ -1,40 +1,43 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class sample {
+public class  sample {
     public static void main(String[] args) {
-        Scanner scan =new Scanner(System.in);
-        int n =scan.nextInt();
-        ArrayList<Integer> Arr =new ArrayList<>();
-        for (int i =0;i<=n;i++)
-        {
-            Arr.add(i);
-        }
-        int l =0;
-        int h =Arr.size()-1;
-        int flag =1;
-        while (l<=h) 
-        {
-            int mid= h+l/2;
-            if(((Arr.get(mid))*(Arr.get(mid)))>n)
-            {
-                h=mid-1;
-            }
-            else if (((Arr.get(mid))*(Arr.get(mid)))<n)
-            {
-                l=mid+1;
-            }
-            else
-            {
-                flag=0;
+        Scanner scan = new Scanner(System.in);
+        int num1 = scan.nextInt();
+        int num2 = scan.nextInt();
+        System.out.println(performOperation(Math.min(num1, num2), Math.max(num1, num2)));
+    }
+
+    public static int performOperation(int num1, int num2) {
+        int len = Integer.MAX_VALUE;
+        int res = Integer.MAX_VALUE;
+
+        for (int i = num2; i >= num1; i--) {
+            boolean isPowerOf2 = check(i);
+            if (isPowerOf2) {
+                int newlen = findLength(i);
+                if (len >= newlen) {
+                    len = newlen;
+                    res = i;
+                }
             }
         }
-        if (flag!=0)
-        {
-            System.out.println("Sqrt Not Present");
+
+        return res == Integer.MAX_VALUE ? 0 : res;
+    }
+
+    // Corrected check method to verify if n is a power of 2
+    public static boolean check(int n) {
+        return n != 0 && (n & (n - 1)) == 0;
+    }
+
+    // Method to find the length of the binary representation of n
+    public static int findLength(int n) {
+        String binaryRepresentation = "";
+        while (n > 0) {
+            binaryRepresentation += n % 2;
+            n /= 2;
         }
-        else{
-            System.out.println("hii");
-        }
+        return binaryRepresentation.length();
     }
 }
