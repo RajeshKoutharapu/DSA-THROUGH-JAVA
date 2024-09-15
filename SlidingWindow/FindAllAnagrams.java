@@ -15,11 +15,13 @@ public class FindAllAnagrams {
          String t=String.copyValueOf(ch);
          char ss[]=s.toCharArray();
          for(int i=0;i<=ss.length-k;i++){
-           char [] temp=Arrays.copyOfRange(ss, i,i+k);
-            Arrays.sort(temp);
-            if(t.equals(String.valueOf(temp))){
-               list.add(i);
-            }
+          char [] check=new char[k];
+           for(int j=0;j<k;j++){
+               check[j]=ss[i+j];
+           }
+            Arrays.sort(check);
+                 if(t.equals(String.copyValueOf(check)))
+                     list.add(i);
          }
          System.out.println(list);
     }
